@@ -5,24 +5,26 @@
  * [ a b ]
  * [ c d ]
  */
-double determinant(double a, double b, double c, double d) {
-    return a * d - b * c;
+int determinant(int a, int b, int c, int d) {
+    int first = a * b;
+    int second = c * d;
+    return first - second;
 }
 
 int main() {
     /**
      * Create matrix:
-     * [5  0.1]
+     * [5  4]
      * [3  5]
      */
-    double a = 5;
-    double b = 0.1;
-    double c = 3;
-    double d = 5;
+    int a = 5;
+    int b = 4;
+    int c = 3;
+    int d = 5;
 
-
-    printf("Matrix:\n%f %f\n%f %f", a, b, c, d);
-    printf("\n\nDeterminant: %f", determinant(a, b, c, d));
+    printf("Matrix:\n%d %d\n%d %d", a, b, c, d);
+    printf("\n\nComputed Determinant: %d", determinant(a, b, c, d));
+    printf("\nActual Determinant:   13\n");
 
     return 0;
 }
