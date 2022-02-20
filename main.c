@@ -30,7 +30,7 @@ char* removeWhiteSpace(const char* string) {
     unsigned long int length = strlen(string);
     int index = 0;
 
-    char *newString = (char*) malloc(length * sizeof(char));
+    char *newString = (char*) malloc((length + 1) * sizeof(char));
 
     for (int i = 0; i < length; i++) {
         // must not leave gaps, or forget string terminator
