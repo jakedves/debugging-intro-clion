@@ -11,12 +11,15 @@ int determinant(int a, int b, int c, int d) {
     return first - second;
 }
 
+/**
+ * Creates matrix:
+ *
+ * [5  4]
+ * [3  5]
+ *
+ * and computes the determinant.
+ */
 int main() {
-    /**
-     * Create matrix:
-     * [5  4]
-     * [3  5]
-     */
     int a = 5;
     int b = 4;
     int c = 3;
