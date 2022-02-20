@@ -60,7 +60,7 @@ int powInt(int num, int exp) {
 
     // account for the exp = 1 at the start
     for (int j = 0; j < exp - 1; j++) {
-        sum *= sum;
+        sum *= num;
     }
     return sum;
 }
